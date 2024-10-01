@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "migrate": "prisma migrate dev",
-    "studio": "prisma studio --browser none",
-    "postinstall": "prisma generate"
+    "studio": "prisma studio --browser none"
   },
   "dependencies": {
     "@editorjs/editorjs": "^2.30.6",
