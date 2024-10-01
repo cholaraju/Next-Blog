@@ -1,5 +1,4 @@
 import { prisma } from "@/db";
-import { getServerSession } from "next-auth";
 import Link from "next/link";
 import moment from "moment";
 import Image from "next/image";
