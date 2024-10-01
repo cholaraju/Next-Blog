@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && build",
+    "build": " next build",
     "start": "next start",
     "lint": "next lint",
     "migrate": "prisma migrate dev",
-    "studio": "prisma studio --browser none"
+    "studio": "prisma studio --browser none",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@editorjs/editorjs": "^2.30.6",
