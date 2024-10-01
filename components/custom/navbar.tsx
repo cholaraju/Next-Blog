@@ -40,7 +40,9 @@ const Navbar = () => {
             <DropdownMenuContent>
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Admin</DropdownMenuItem>
+              <DropdownMenuItem>
+              <Link href="/admin">Admin</Link>
+              </DropdownMenuItem>
               <DropdownMenuItem onClick={()=>signOut()}>Logout</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

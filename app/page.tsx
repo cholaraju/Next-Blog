@@ -14,7 +14,7 @@ export default async function Home() {
     <div>
       <div className="mt-5 grid grid-cols-2 gap-2">
         {blogs.map((blog) => (
-          <Link key={blog.id} href="/">
+          <Link key={blog.id} href={`/blog/${blog.id}`}>
             <div className="bg-muted p-6 rounded-lg">
               <h4>{blog.title}</h4>
               <p className="text-muted-foreground text-sm mt-2">
