@@ -11,11 +11,10 @@ interface Props {
 const BlogView = ({ blog }: Props) => {
   const editorRef: React.MutableRefObject<EditorJS | null> =
     React.useRef<EditorJS>(null);
-
+    
   React.useEffect(() => {
     if (editorRef.current) return;
-
-    const editor = new EditorJS({
+   const editor = new EditorJS({
       holder: "editorjs",
       readOnly: true,
       data: { blocks: JSON.parse(blog.blocks) },
